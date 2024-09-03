@@ -71,9 +71,10 @@ nmap <Leader>dh <Plug>VimspectorStepOut
 nmap <Leader>dl <Plug>VimspectorStepInto
 nmap <Leader>dj <Plug>VimspectorStepOver
 
+" Lightline Configuration "
 set laststatus=2
 if !has('gui_running')
-      set t_Co=256
+  set t_Co=256
 endif
 " set noshowmode
 
