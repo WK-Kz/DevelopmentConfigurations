@@ -1,3 +1,6 @@
+" Close the tab if NERDTree is the only window remaining in it.
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
+
 " Git
 let g:lightline = {
             \ 'active': {
@@ -30,16 +33,6 @@ let g:fzf_action = {
   \ 'ctrl-x': 'split',
   \ 'ctrl-v': 'vsplit' }
 
-" Default fzf layout
-" - Popup window (center of the screen)
-" let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6 } }
-
-" " - Popup window (center of the current window)
-" let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true } }
-
-" " - Popup window (anchored to the bottom of the current window)
-" let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.6, 'relative': v:true, 'yoffset': 1.0 } }
-
 " - down / up / left / right
 let g:fzf_layout = { 'down': '40%' }
 
@@ -71,7 +64,6 @@ let g:fzf_colors =
 " - When set, CTRL-N and CTRL-P will be bound to 'next-history' and
 "   'previous-history' instead of 'down' and 'up'.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
-
 
 " This is the default extra key bindings
 let g:fzf_vim = {}
