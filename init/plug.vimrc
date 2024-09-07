@@ -35,6 +35,7 @@ Plug 'tpope/vim-commentary'
 
 " Vim Debugger For C/C++/Python/etc"
 Plug 'puremourning/vimspector'
+Plug 'jclsn/vimspector-templates'
 
 Plug 'itchyny/vim-gitbranch'
 Plug 'itchyny/lightline.vim'
