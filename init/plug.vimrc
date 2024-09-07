@@ -43,6 +43,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ryanoasis/vim-devicons'
 
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 
 call plug#end()
 " PLUG END INITIALIZATION"

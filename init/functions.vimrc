@@ -31,7 +31,7 @@ imap <c-x><c-l> <plug>(fzf-complete-line)
 " #ENDFZFBINDS "
 
 " CMake Plugin
-let g:cmake_default_config="RelWithDebInfo"
+let g:cmake_default_config='RelWithDebInfo'
 let g:cmake_generate_options=["-GNinja", "-DCMAKE_EXPORT_COMPILE_COMMANDS=ON"]
 let g:cmake_jump_on_error = 0
 nmap <leader>cg <Plug>(CMakeGenerate)

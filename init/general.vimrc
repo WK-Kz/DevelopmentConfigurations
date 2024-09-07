@@ -8,6 +8,7 @@ colorscheme habamax
 filetype plugin on
 filetype indent on
 
+set updatetime=100
 set backspace=indent,eol,start
 set tabstop=2
 set shiftwidth=2
