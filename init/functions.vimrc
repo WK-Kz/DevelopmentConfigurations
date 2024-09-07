@@ -81,7 +81,7 @@ endif
 " FUNCTIONS "
 
 "Asynccomplete"
-imap <c-space> <Plug>(asyncomplete_force_refresh))
+imap <c-@> <Plug>(asyncomplete_force_refresh)
 
 " Vim LSP
 function! s:on_lsp_buffer_enabled() abort
