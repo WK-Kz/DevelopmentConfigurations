@@ -1,5 +1,8 @@
 set encoding=UTF-8
 
+set nobackup
+set nowritebackup
+
 let $BAT_THEME='gruvbox-dark'
 
 colorscheme habamax

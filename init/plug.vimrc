@@ -15,12 +15,14 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'psliwka/vim-smoothie'
 
 " LSP Settings "
-Plug 'prabirshrestha/vim-lsp'
-Plug 'mattn/vim-lsp-settings'
-Plug 'prabirshrestha/asyncomplete.vim'
-Plug 'prabirshrestha/asyncomplete-lsp.vim'
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'mattn/vim-lsp-settings'
+" Plug 'prabirshrestha/asyncomplete.vim'
+" Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
-"Color Scheme"
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+""Color Scheme"
 Plug 'morhetz/gruvbox'
 
 " Helpers? Delete when unneeded"
