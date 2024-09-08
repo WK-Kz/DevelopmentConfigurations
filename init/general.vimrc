@@ -1,8 +1,10 @@
 set encoding=UTF-8
 
-let $BAT_THEME='gruvbox-light'
+let $BAT_THEME='gruvbox-dark'
 
 colorscheme habamax
+
+let g:mapleader = "\<Space>"
 
 " Enable filetype plugins
 filetype plugin on

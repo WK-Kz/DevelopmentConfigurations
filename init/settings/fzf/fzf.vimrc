@@ -1,16 +1,33 @@
-" Close the tab if NERDTree is the only window remaining in it.
-autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | call feedkeys(":quit\<CR>:\<BS>") | endif
+" FZF "
+" #STARTFZFBINDS "
+" fzf in current directory "
+nnoremap <silent> <leader><space> :Files<CR>
 
-" Git
-let g:lightline = {
-            \ 'active': {
-            \   'left': [ [ 'mode', 'paste' ],
-            \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-            \ },
-            \ 'component_function': {
-            \   'gitbranch': 'gitbranch#name'
-            \ },
-            \ }
+" ripgrep in current directory
+nnoremap <silent> <leader>ff :Rg <CR>
+
+" fzf in up directory "
+nnoremap <silent> <leader>f :Files ../<CR>
+
+" fzf in home
+nnoremap <silent> <leader>fh :Files ~/<CR>
+nnoremap <silent> <leader>fs :History<CR>
+nnoremap <silent> <leader>fS :History/<CR>
+nnoremap <silent> <leader>fc :History:<CR>
+" No idea what this does
+" imap <C-f> <plug>(fzf-complete-line)
+
+" Mapping selecting mappings
+nmap <leader><tab> <plug>(fzf-maps-n)
+xmap <leader><tab> <plug>(fzf-maps-x)
+omap <leader><tab> <plug>(fzf-maps-o)
+
+" Insert mode completion
+imap <c-x><c-k> <plug>(fzf-complete-word)
+imap <c-x><c-f> <plug>(fzf-complete-path)
+imap <c-x><c-l> <plug>(fzf-complete-line)
+
+" #ENDFZFBINDS "
 
 " #STARTFZF
 " This is the default extra key bindings
