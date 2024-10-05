@@ -24,8 +24,8 @@ set backspace=indent,eol,start
 set cursorline
 set relativenumber
 
-" For non-godot projects... "
-set autoindent smartindent expandtab tabstop=2 shiftwidth=2
+set listchars=tab:⇤–⇥,space:·,trail:·,precedes:⇠,extends:⇢,nbsp:×
+set autoindent smartindent expandtab tabstop=2 shiftwidth=2 list
 
 " Status Window
 set laststatus=2        " always show status line
