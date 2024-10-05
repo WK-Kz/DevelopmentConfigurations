@@ -1,11 +1,17 @@
+function! CocCurrentFunction()
+  return get(b:, 'coc_current_function', '')
+endfunction
+
 " Git
 let g:lightline = {
             \ 'active': {
             \   'left': [ [ 'mode', 'paste' ],
-            \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+            \             [ 'gitbranch', 'cocstatus', 'currentfunction', 'readonly', 'absolutepath', 'modified' ] ]
             \ },
             \ 'component_function': {
-            \   'gitbranch': 'gitbranch#name'
+            \   'gitbranch': 'gitbranch#name',
+            \   'cocstatus': 'coc#status',
+            \   'currentfunction': 'CocCurrentFunction'
             \ },
             \ }
 

@@ -13,29 +13,21 @@ let g:mapleader = "\<Space>"
 filetype plugin on
 filetype indent on
 
+syntax on
+set hidden
+
+" For COC? "
 set updatetime=100
+
+set history=500 " For FZF 
 set backspace=indent,eol,start
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set autoindent
-set smartindent
-set history=500
 set cursorline
 set relativenumber
 
+" For non-godot projects... "
+set autoindent smartindent expandtab tabstop=2 shiftwidth=2
+
 " Status Window
-set statusline+=%F " show full path of current file
-
-"display a warning if &paste is set
-set statusline+=%#error#
-set statusline+=%{&paste?'[paste]':''}
-set statusline+=%*
-
-set statusline+=%=      " left/right separator
-set statusline+=%c,     " cursor column
-set statusline+=%l/%L   " cursor line/total lines
-set statusline+=\ %P    " percent through file
 set laststatus=2        " always show status line
 
 " Set to auto read when a file is changed from the outside
@@ -69,8 +61,6 @@ inoremap <expr> ] strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
 nnoremap <leader>! :!bash<CR>
 inoremap <F3> <esc>:set paste!<cr>
 nnoremap <F3> :set paste!<cr>
-" nnoremap gh :tabprevious<CR>
-" nnoremap gl :tabnext<CR>
 
 " Terminal colors for seoul256 color scheme
 let g:terminal_ansi_colors = [
