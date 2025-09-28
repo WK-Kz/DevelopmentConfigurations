@@ -2,6 +2,8 @@ function! CocCurrentFunction()
   return get(b:, 'coc_current_function', '')
 endfunction
 
+autocmd User CocGitStatusChange {command}
+
 " Git
 let g:lightline = {
             \ 'active': {
@@ -11,7 +13,8 @@ let g:lightline = {
             \ 'component_function': {
             \   'gitbranch': 'gitbranch#name',
             \   'cocstatus': 'coc#status',
-            \   'currentfunction': 'CocCurrentFunction'
+            \   'currentfunction': 'CocCurrentFunction',
+            \   'status': 'zoom#statusline'
             \ },
             \ }
 
