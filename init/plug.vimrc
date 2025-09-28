@@ -1,6 +1,8 @@
 " Initialize Plugins "
 call plug#begin()
 
+Plug 'dhruvasagar/vim-zoom'
+
 " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 " Use 'dir' option to install plugin in a non-default directory
 Plug 'junegunn/fzf', { 'dir': '~/.fzf' }

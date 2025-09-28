@@ -62,6 +62,9 @@ nnoremap <leader>! :!bash<CR>
 inoremap <F3> <esc>:set paste!<cr>
 nnoremap <F3> :set paste!<cr>
 
+nnoremap <a-left> :tabm -1<CR>
+nnoremap <a-right> :tabm +1<CR>
+
 " Terminal colors for seoul256 color scheme
 let g:terminal_ansi_colors = [
       \ '#4e4e4e', '#d68787', '#5f865f', '#d8af5f',
