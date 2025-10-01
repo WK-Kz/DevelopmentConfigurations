@@ -4,6 +4,7 @@ source $HOME/.vim/init/settings/fzf/fzf.vimrc
 source $HOME/.vim/init/settings/fzf/fzf_vim.vimrc
 source $HOME/.vim/init/settings/nerdtree/nerdtree.vimrc
 source $HOME/.vim/init/settings/lightline/lightline.vimrc
+source $HOME/.vim/init/settings/limelight/limelight.vimrc
 source $HOME/.vim/init/settings/vimspector/vimspector.vimrc
 
 " Anything placed here are experimental ie. cmake and LSPs "

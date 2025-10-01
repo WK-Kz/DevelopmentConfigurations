@@ -21,6 +21,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 ""Color Scheme"
 Plug 'morhetz/gruvbox'
 
+" Limelight "
+Plug 'junegunn/limelight.vim'
+
 " Helpers? Delete when unneeded"
 Plug 'wellle/context.vim'
 
