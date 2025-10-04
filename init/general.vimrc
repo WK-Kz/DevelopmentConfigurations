@@ -17,7 +17,7 @@ syntax on
 set hidden
 
 " For COC? "
-set updatetime=100
+set updatetime=50
 
 set history=500 " For FZF 
 set backspace=indent,eol,start

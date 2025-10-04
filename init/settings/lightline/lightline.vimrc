@@ -8,7 +8,7 @@ autocmd User CocGitStatusChange {command}
 let g:lightline = {
             \ 'active': {
             \   'left': [ [ 'mode', 'paste' ],
-            \             [ 'gitbranch', 'cocstatus', 'currentfunction', 'readonly', 'absolutepath', 'modified' ] ]
+            \             [ 'gitbranch', 'cocstatus', 'currentfunction', 'status', 'readonly', 'absolutepath', 'modified' ] ]
             \ },
             \ 'component_function': {
             \   'gitbranch': 'gitbranch#name',
